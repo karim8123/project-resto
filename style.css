@@ -67,7 +67,7 @@ header nav a::after {
     height: 2px;
     opacity: 0.7;
 
-    transition: 0.3s ease-in-out width, 0.3s ease-in-out left;
+    transition: 0.1s ease-in-out width, 0.1s ease-in-out left;
 }
 
 header nav a:hover {
