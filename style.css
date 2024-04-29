@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: x-large;
+    font-weight: normal;
+    font-style: normal;
+    color: #1c1c1c;
+    background: #fff4e0;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+
+    justify-content: space-between;
+
+    background: #ffc400;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Lobster', sans-serif;
+
+    line-height: 0.8;
+    text-indent: -32px;
+
+    margin: auto;
+}
+
+header nav {
+    margin: auto 24px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav li {
+    display: inline;
+    font-size: 24px;
+    margin: 4px;
+    padding: 4px;
+}
+
+header nav a {
+    display: inline-block;
+    position: relative;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    background: #000;
+    width: 0;
+    height: 2px;
+    opacity: 0.7;
+
+    transition: 0.3s ease-in-out width, 0.3s ease-in-out left;
+}
+
+header nav a:hover {
+    text-decoration: none;
+}
+
+header nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+header nav a.selected::after {
+    width: 100%;
+    left: 0;
+}
+
+header .left {
+    display: flex;
+
+    align-items: center;
+}
+
+header .left hr {
+    padding: 0;
+    height: 80%;
+    border-right: 2px solid #1c1c1c;
+}
+
+/* MAIN */
+.slogan {
+    background: url(images/background_home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slogan div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 45px;
+    
+    backdrop-filter: blur(0);
+    opacity: 0;
+    transition: ease-out 2s opacity, ease-out 1s backdrop-filter;
+    padding:200px;
+    
+}
+
+.slogan:hover div {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+
+/* Presentation */
+.presentation {
+    margin: 24px;
+}
+
+.presentation td {
+    vertical-align: top;
+    width: 33%;
+}
+
+.presentation td section {
+    margin: 12px;
+    padding: 24px;
+}
+
+.bienvenue {
+    text-align: center;
+}
+
+.a-propos,
+.specialite {
+    border-right: 2px #1c1c1c solid;
+}
+
+/* AUTRE */
+h2,
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+h3, em {
+    color: #f5ae2b;
+}
+
+em {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+strong {
+    color: #ffc400;
+    font-weight: bold;
+}
+
+p {
+    text-indent: 24px;
+}
+
+a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 8px;
+    margin: 0;
+
+    background: #1c1c1c;
+}
