@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
 
+
 body {
     margin: 0;
     padding: 0;
@@ -24,14 +25,10 @@ header {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-style: normal;
     font-weight: bold;
     font-family: 'Lobster', sans-serif;
-
-    line-height: 0.8;
-    text-indent: -32px;
-
     margin: auto;
 }
 
@@ -98,6 +95,7 @@ header .left hr {
 
 /* MAIN */
 .slogan {
+    position: relative;
     background: url(images/background_home.jpg);
     background-size: cover;
     background-position: center;
@@ -113,14 +111,25 @@ header .left hr {
     
     backdrop-filter: blur(0);
     opacity: 0;
-    transition: ease-out 2s opacity, ease-out 1s backdrop-filter;
+    transition: ease-out 1s opacity, ease-out 1s backdrop-filter;
     padding:200px;
     
 }
 
-.slogan:hover div {
+.slogan:hover div , .slogan:hover .download{
     opacity: 1;
     backdrop-filter: blur(5px);
+}
+.slogan .download {
+    background: #fff4e0;
+    border-radius: 25px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 8px;
+    opacity: 0;
+    transition: ease-out 1s opacity;
 }
 
 /* Presentation */
