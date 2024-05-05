@@ -38,9 +38,81 @@
 
     <hr>
 
-    <main></main>
+    <main>
+        <section class="bienvenue">
+            <h2>Contactez Nous</h2>
+            <p>
+                Venez manger un bout ou laissez nous un message
+            </p>
+        </section>
 
-    <footer></footer>
+        <div class="contact">
+            <section class="formulaire">
+                <h3>Nous envoyer un message:</h3>
+                <form action="recu.php">
+                    <p>
+                        <label for="username">Votre pseudo:</label>
+                        <input name="username" type="text" placeholder="Pseudo">
+                    </p>
+                    
+                    <p>
+                        <label for="mail">Votre e-mail:</label>
+                        <input name="mail" type="text" placeholder="Mail">
+                    </p>
+
+                    <p>    
+                        <label for="message">Votre message:</label>
+                        <textarea name="message" type="text" placeholder="Message"></textarea>
+                    </p>
+                </form>
+            </section>
+
+            <section class="emplacement">
+                <h3>Notre adresse:</h3>
+                <p>
+                    Vous pouvez retrouver notre restaurant au <address>Tizi-Ouzou, Algérie</address>.
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.100092275099!2d4.0558063!3d36.6961326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128dc816c66438fb%3A0x390274960dacce78!2sD%C3%A9partement%20d&#39;informatique!5e0!3m2!1sfr!2sdz!4v1714844909234!5m2!1sfr!2sdz"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            
+            </section>
+        </div>
+    </main>
+
+    <hr class="footer">
+
+    <footer>
+        <section>
+            <h2>
+                Nos numéro de téléphone:
+            </h2>
+            <ul>
+                <li>
+                    <a>0549184236</a>
+                </li>
+                <li>
+                    <a>06625468917</a>
+                </li>
+                <li>
+                    <a>07146462319</a>
+                </li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Nos reseaux sociaux:</h2>
+            <ul class="social-links">
+                <li><a href="https://facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+                <li><a href="mailto:info@example.com"><img src="gmail.png" alt="Gmail"></a></li>
+            </ul>
+        </section>
+        
+    </footer>
 </body>
 
 </html>
