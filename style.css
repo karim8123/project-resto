@@ -258,33 +258,29 @@ ul {
     padding: 24px;
 }
 
-.menu h2, .menu h3, .menu summary {
+.menu h2, .menu h3{
     text-align: center;
     font-family: 'Pacifico', cursive, sans-serif;
 }
 
+ .menu summary {
+    font-family: 'Pacifico', cursive, sans-serif;
+ }
+
 .menu details summary::-webkit-details-marker,
 .menu details summary::marker{
-    display: none;
     content:"+";
     color: #1c1c1c;
 }
 
 .menu details[open] summary::-webkit-details-marker,
 .menu details[open] summary::marker {
-    display: none;
     content: "-";
 }
 
 .menu summary {
     color: #f5ae2b;
     text-decoration: none;
-}
-
-.menu details hr{
-    width: 80%;
-    margin: auto;
-    height: 2px;
 }
 
 .menu .bienvenue h3 {
@@ -308,18 +304,4 @@ ul {
 
     position: relative;
     bottom: 25px; 
-}
-
-.menu .left {
-    text-align:left;
-    margin-left: 25%;
-}
-
-.menu .right {
-    text-align: right;
-    margin-right: 25%;
-}
-
-.menu .center {
-    text-align: center;
 }
