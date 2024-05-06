@@ -130,14 +130,15 @@ main .presentation {
 }
 
 main .presentation .contenu {
-    display:flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 main .presentation .contenu>section {
     margin: 12px;
     padding: 24px;
-    width: 33%;
 }
+
 
 main .bienvenue {
     text-align: center;
