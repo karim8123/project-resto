@@ -90,7 +90,7 @@ header .left hr {
     border-right: 2px solid #1c1c1c;
 }
 
-.slogan {
+main .slogan {
     position: relative;
     background: url(images/background_home.jpg);
     background-size: cover;
@@ -98,7 +98,7 @@ header .left hr {
     background-repeat: no-repeat;
 }
 
-.slogan div {
+main .slogan div {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -112,11 +112,11 @@ header .left hr {
     
 }
 
-.slogan:hover div, .slogan:hover .download{
+main .slogan:hover div, .slogan:hover .download{
     opacity: 1;
     backdrop-filter: blur(5px);
 }
-.slogan .download {
+main .slogan .download {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -125,37 +125,38 @@ header .left hr {
     transition: ease-out 1s opacity;
 }
 
-.presentation {
+main .presentation {
     margin: 24px;
 }
 
-.presentation td {
+main .presentation td {
     vertical-align: top;
     width: 33%;
 }
 
-.presentation td section {
+main .presentation td section {
     margin: 12px;
     padding: 24px;
 }
 
-.bienvenue {
+main .bienvenue {
     text-align: center;
 }
 
-.a-propos,
-.specialite {
+main .a-propos,
+main .specialite {
     border-right: 2px #1c1c1c solid;
 }
 
-.contact {
+main .contact {
     display: flex;
     
     justify-content: space-around;
     width: 100%;
 }
 
-.formulaire input, .formulaire textarea {
+main .formulaire input,
+main .formulaire textarea {
     width: 400px;
     height: 50px;
     margin: auto;
@@ -170,7 +171,7 @@ header .left hr {
     border-radius: 50px;
 }
 
-.emplacement address{
+main .emplacement address{
     display: inline;
 
     text-decoration: dotted underline;
@@ -178,27 +179,111 @@ header .left hr {
     font-style: normal;
 }
 
+main .menu {
+    padding: 24px;
+}
+
+main .menu h2,
+main .menu h3,
+main .menu summary {
+    text-align: center;
+    font-family: 'Pacifico', cursive, sans-serif;
+}
+
+main .menu details summary::-webkit-details-marker,
+main .menu details summary::marker {
+    display: none;
+    content: "+";
+    color: #1c1c1c;
+}
+
+main .menu details[open] summary::-webkit-details-marker,
+main .menu details[open] summary::marker {
+    display: none;
+    content: "-";
+}
+
+main .menu summary {
+    color: #f5ae2b;
+    text-decoration: none;
+}
+
+main .menu details hr {
+    width: 80%;
+    margin: auto;
+    height: 2px;
+}
+
+main .menu .bienvenue h3 {
+    font-size: 30px;
+    text-decoration: none;
+
+    position: relative;
+    top: 30px;
+}
+
+main .menu .bienvenue h3::before,
+main .menu .bienvenue h3::after {
+    content: "-";
+}
+
+main .menu .bienvenue em {
+    display: block;
+    color: #1c1c1c;
+    font-family: 'Lobster', sans-serif;
+    font-style: normal;
+    font-size: 55px;
+
+    position: relative;
+    bottom: 25px;
+}
+
 footer {
     display: flex;
     justify-items: space-around;
-    background: #1c1c1c;
-}
 
-footer, footer h2, footer a {
+    background: #1c1c1c;
     font-size: large;
     color: #fff4e0;
 }
 
-footer section, footer hr {
-    margin: auto;
+footer a {
+    color: #fff4e0;
 }
 
-hr.footer{
-    background: #ffc400;
+footer h3 {
+    text-align: center;
+    font-family: 'Pacifico', cursive, sans-serif;
 }
-footer hr{
-    height: 100px;
-    border-right: 5px solid #f5ae2b;
+
+footer section {
+    margin: 20px auto 5px;
+}
+
+footer p {
+    text-indent: 0;
+}
+footer ul,
+footer h3 {
+    margin: 0;
+}
+
+footer .contact {
+    margin-left: 25%;
+}
+
+footer .social-icons {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+footer .horraire {
+    margin-right: 25%;
+}
+
+footer .horraire ul>li:nth-child(2n+1) {
+    text-align: center;
+    font-family: 'Pacifico', cursive, sans-serif;
 }
 
 h2,
@@ -248,138 +333,10 @@ hr {
     background: #1c1c1c;
 }
 
+hr.footer {
+    background: #ffc400;
+}
+
 ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu {
-    padding: 24px;
-}
-
-.menu h2, .menu h3, .menu summary {
-    text-align: center;
-    font-family: 'Pacifico', cursive, sans-serif;
-}
-
-.menu details summary::-webkit-details-marker,
-.menu details summary::marker{
-    display: none;
-    content:"+";
-    color: #1c1c1c;
-}
-
-.menu details[open] summary::-webkit-details-marker,
-.menu details[open] summary::marker {
-    display: none;
-    content: "-";
-}
-
-.menu summary {
-    color: #f5ae2b;
-    text-decoration: none;
-}
-
-.menu details hr{
-    width: 80%;
-    margin: auto;
-    height: 2px;
-}
-
-.menu .bienvenue h3 {
-    font-size: 30px;
-    text-decoration: none;
-
-    position: relative;
-    top: 30px;
-}
-.menu .bienvenue h3::before,
-.menu .bienvenue h3::after{
-    content:"-";
-}
-
-.menu .bienvenue em{
-    display: block;
-    color: #1c1c1c;
-    font-family: 'Lobster', sans-serif;
-    font-style:normal;
-    font-size: 55px;
-
-    position: relative;
-    bottom: 25px; 
-}
-
-footer h3{
-    text-align: center;
-    font-family: 'Pacifico', cursive, sans-serif;
-}
-footer h4{
-    text-align: center;
-    font: size 5px;
-    text-decoration: none;
-    font-family: 'Pacifico', cursive, sans-serif;
-}
-
-.contact h3{
-    margin-top: 20px;
-}
-.contact p{
-    margin-top: -20px;
-}
-
-.contact {
-    margin-top: -20px;
-    margin-left: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; 
-    justify-content: center; 
-}
-
-.contact ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contact ul li {
-    margin-right: 5px; 
-}
-
-.social-icons {
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 30px; 
-    height: auto;
-    margin-top: -20px;
-    margin-left: 25px;
-    padding: 0;
-    margin-right: 5px; /* Espacement entre les icônes */
-} 
-
-.horraire{
-    margin-right: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.horraire .semaine h4{
-    margin-top: -20px;
-}
-
-.horraire .semaine p{
-    margin-top: -20px;
-}
-
-.horraire .weekend h4{
-    margin-top: -20px;
-}
-
-.horraire .weekend p{
-    margin-top: -20px;
 }
