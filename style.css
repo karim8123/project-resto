@@ -403,7 +403,7 @@ ul {
     }
 
     main .contact .emplacement #map {
-        width: 750px;
+        width: 600px;
         height: 400px;
     }
 
@@ -454,8 +454,8 @@ ul {
     }
 
     main .contact .emplacement #map {
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
     }
 
     footer {
