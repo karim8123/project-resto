@@ -245,6 +245,11 @@ main.menu .bienvenue em {
     bottom: 25px;
 }
 
+main.recu {
+    text-align: center;
+    height: 100ovh;
+}
+
 footer {
     display: grid;
 
