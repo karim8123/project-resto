@@ -84,12 +84,6 @@ header .left {
     align-items: center;
 }
 
-header .left hr {
-    padding: 0;
-    height: 80%;
-    border-right: 2px solid #1c1c1c;
-}
-
 .slogan {
     position: relative;
     background: url(images/background_home.jpg);
@@ -248,14 +242,32 @@ hr {
     background: #1c1c1c;
 }
 
-ul {
-    list-style-type: none;
+hr.vertical {
     padding: 0;
-    margin: 0;
+    height: 80%;
+    border-right: 2px solid #1c1c1c;
+}
+
+ul{
+    list-style-type: disc;
 }
 
 .menu {
     padding: 24px;
+}
+
+.menu .propositions>ul {
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+    list-style-type: none;
+}
+
+.menu .propositions>ul>li {
+    width: 25%;
+    margin: 0 auto;
+    padding: 25px;
 }
 
 .menu h2, .menu h3{
