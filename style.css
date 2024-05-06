@@ -179,42 +179,42 @@ main .emplacement address{
     font-style: normal;
 }
 
-main .menu {
+main.menu {
     padding: 24px;
 }
 
-main .menu h2,
-main .menu h3,
-main .menu summary {
+main.menu h2,
+main.menu h3,
+main.menu summary {
     text-align: center;
     font-family: 'Pacifico', cursive, sans-serif;
 }
 
-main .menu details summary::-webkit-details-marker,
-main .menu details summary::marker {
+main.menu details summary::-webkit-details-marker,
+main.menu details summary::marker {
     display: none;
     content: "+";
     color: #1c1c1c;
 }
 
-main .menu details[open] summary::-webkit-details-marker,
-main .menu details[open] summary::marker {
+main.menu details[open] summary::-webkit-details-marker,
+main.menu details[open] summary::marker {
     display: none;
     content: "-";
 }
 
-main .menu summary {
+main.menu summary {
     color: #f5ae2b;
     text-decoration: none;
 }
 
-main .menu details hr {
+main.menu details hr {
     width: 80%;
     margin: auto;
     height: 2px;
 }
 
-main .menu .bienvenue h3 {
+main.menu .bienvenue h3 {
     font-size: 30px;
     text-decoration: none;
 
@@ -222,12 +222,12 @@ main .menu .bienvenue h3 {
     top: 30px;
 }
 
-main .menu .bienvenue h3::before,
-main .menu .bienvenue h3::after {
+main.menu .bienvenue h3::before,
+main.menu .bienvenue h3::after {
     content: "-";
 }
 
-main .menu .bienvenue em {
+main.menu .bienvenue em {
     display: block;
     color: #1c1c1c;
     font-family: 'Lobster', sans-serif;
