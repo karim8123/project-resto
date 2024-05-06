@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -165,19 +169,33 @@ main .contact .formulaire input {
     font-weight: 500;
 }
 
-main .contact .formulaire input[type="submit"] {
+main .contact .formulaire input[type="button"] {
     color: #1c1c1c;
     background: #ffc400;
     cursor: pointer;
 }
 
-main .contact .formulaire input[type="submit"]:hover {
+main .contact .formulaire input[type="button"]:hover {
     background: #f5ae2b;
+}
+
+main .contact .formulaire input[type="button"]:active {
+    background: #f39f46;
 }
 
 main .contact .formulaire textarea {
     height: 200px;
     padding-top: 25px;
+}
+
+main .contact .formulaire #recu {
+    display: none;
+    width: 83%;
+    padding: 10px 20px;
+    margin: 25px;
+    background: #f5ae2b;
+
+    border-radius: 25px;
 }
 
 main .contact .emplacement address{
@@ -197,6 +215,14 @@ main.menu h3,
 main.menu summary {
     text-align: center;
     font-family: 'Pacifico', cursive, sans-serif;
+}
+
+main.menu details summary {
+    transition: .5s ease-in-out transform;
+}
+
+main.menu details summary:hover{
+    transform: translateY(-5px);
 }
 
 main.menu details summary::marker {
@@ -243,11 +269,6 @@ main.menu .bienvenue em {
 
     position: relative;
     bottom: 25px;
-}
-
-main.recu {
-    text-align: center;
-    height: 100ovh;
 }
 
 footer {

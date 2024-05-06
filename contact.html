@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo_color.png" type="image/png">
     <title>Le Poulet Doré - Contactez nous</title>
+    <script>
+        function afficherMessageRecu() {
+            document.getElementById("recu").style.display = "block";
+            window.location.href = "#titre-formulaire";
+        }
+    </script>
 </head>
 
 <body>
@@ -49,8 +55,11 @@
 
         <div class="contact">
             <section class="formulaire">
-                <h3>Nous envoyer un message:</h3>
-                <form action="recu.php">
+                <h3 id="titre-formulaire">Nous envoyer un message:</h3>
+                <form action="">
+                    <p>
+                        <label id="recu">Votre message a bien été reçu.</label>
+                    </p>
                     <p>
                         <label for="username">Votre pseudo:</label>
                         <input name="username" type="text" placeholder="Pseudo">
@@ -66,7 +75,7 @@
                         <textarea name="message" type="text" cols="5" placeholder="Message"></textarea>
                     </p>
                     <p>
-                        <input type="submit" value="Envoyer">
+                        <input type="button" value="Envoyer" onclick="afficherMessageRecu()">
                     </p>
                 </form>
             </section>
