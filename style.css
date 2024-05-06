@@ -398,6 +398,11 @@ ul {
         display: none;
     }
 
+    header .left img{
+        max-width: 64px;
+        max-height: auto;
+    }
+
     main .presentation .contenu {
         grid-template-columns: auto;
     }
