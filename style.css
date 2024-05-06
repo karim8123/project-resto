@@ -231,8 +231,7 @@ main.menu .bienvenue em {
 }
 
 footer {
-    display: flex;
-    justify-items: space-around;
+    display: grid;
 
     background: #1c1c1c;
     font-size: large;
@@ -247,30 +246,23 @@ footer h3 {
     font-family: 'Pacifico', cursive, sans-serif;
 }
 
-footer section {
-    margin: 20px auto 5px;
-}
-
-footer p {
-    text-indent: 0;
-}
 footer ul,
 footer h3 {
     text-align: center;
     margin: 0;
 }
 
-footer .contact {
-    margin-left: 25%;
+footer p {
+    text-indent: 0;
 }
 
-footer .social-icons {
+footer section {
+    margin: 20px auto 5px;
+}
+
+footer .contact .social-icons {
     display: inline-block;
     margin-right: 5px;
-}
-
-footer .horraire {
-    margin-right: 31%;
 }
 
 footer .horraire ul>li:nth-child(2n+1) {
@@ -350,6 +342,18 @@ ul {
     main .slogan div {
         font-size: 45px;
     }
+
+    footer {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
+    footer .contact {
+        grid-column: 2 / 3;
+    }
+
+    footer .horraire {
+        grid-column: 3 / 4;
+    }
 }
 
 /* Tablettes et grand telephones */
@@ -378,6 +382,10 @@ ul {
     main .slogan div {
         font-size: 45px;
     }
+
+    footer {
+        grid-template-columns: auto auto;
+    }
 }
 
 /* Petit telephones */
@@ -404,5 +412,9 @@ ul {
 
     main .slogan div {
         font-size: 30px;
+    }
+
+    footer {
+        grid-template-columns: auto;
     }
 }
