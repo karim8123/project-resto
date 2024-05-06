@@ -142,10 +142,7 @@ main .bienvenue {
 }
 
 main .contact {
-    display: flex;
-    
-    justify-content: space-around;
-    width: 100%;
+    display: grid;
 }
 
 main .formulaire input,
@@ -343,6 +340,12 @@ ul {
         font-size: 45px;
     }
 
+    main .contact {
+        grid-template-columns: auto auto;
+        
+        margin-left: 25px;
+    }
+
     footer {
         grid-template-columns: 25% 25% 25% 25%;
     }
@@ -383,6 +386,12 @@ ul {
         font-size: 45px;
     }
 
+    main .contact {
+        grid-template-columns: auto;
+        
+        margin-left: 25%;
+    }
+
     footer {
         grid-template-columns: auto auto;
     }
@@ -417,6 +426,12 @@ ul {
 
     main .slogan div {
         font-size: 30px;
+    }
+
+    main .contact {
+        grid-template-columns: auto;
+        
+        margin-left: 5%;
     }
 
     footer {
