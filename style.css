@@ -265,6 +265,7 @@ footer p {
 }
 footer ul,
 footer h3 {
+    text-align: center;
     margin: 0;
 }
 
@@ -282,7 +283,6 @@ footer .horraire {
 }
 
 footer .horraire ul>li:nth-child(2n+1) {
-    text-align: center;
     font-family: 'Pacifico', cursive, sans-serif;
 }
 
