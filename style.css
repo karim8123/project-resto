@@ -165,9 +165,14 @@ main .contact .formulaire input {
     font-weight: 500;
 }
 
-main .contact .formulaire input[type="button"] {
+main .contact .formulaire input[type="submit"] {
     color: #1c1c1c;
     background: #ffc400;
+    cursor: pointer;
+}
+
+main .contact .formulaire input[type="submit"]:hover {
+    background: #f5ae2b;
 }
 
 main .contact .formulaire textarea {
