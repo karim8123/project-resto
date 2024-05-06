@@ -129,14 +129,14 @@ main .presentation {
     margin: 24px;
 }
 
-main .presentation td {
-    vertical-align: top;
-    width: 33%;
+main .presentation .contenu {
+    display:flex;
 }
 
-main .presentation td section {
+main .presentation .contenu>section {
     margin: 12px;
     padding: 24px;
+    width: 33%;
 }
 
 main .bienvenue {
