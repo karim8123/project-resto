@@ -35,10 +35,6 @@ header nav {
     margin: auto 24px;
 }
 
-header nav ul {
-    list-style: none;
-}
-
 header nav li {
     display: inline;
     font-size: 24px;
@@ -49,6 +45,7 @@ header nav li {
 header nav a {
     display: inline-block;
     position: relative;
+    transform: translateY(-3px);
 }
 
 header nav a::after {
@@ -63,7 +60,7 @@ header nav a::after {
     height: 2px;
     opacity: 0.7;
 
-    transition: 0.1s ease-in-out width, 0.1s ease-in-out left;
+    transition: 0.1s ease-in-out width, 0.1s ease-in-out left, 0.3s ease-in-out transform;
 }
 
 header nav a:hover {
@@ -250,16 +247,31 @@ hr {
     background: #1c1c1c;
 }
 
-.menu h3 {
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu h2, .menu h3 {
     text-align: center;
     font-family: 'Pacifico', cursive, sans-serif;
 }
 
-.menu hr {
-    height: 4px;
-    width: 80%;
+.menu details summary::-webkit-details-marker,
+.menu details summary::marker{
+    display: none;
+    content:"+";
+}
 
-    margin: auto;
+.menu details[open] summary::-webkit-details-marker,
+.menu details[open] summary::marker {
+    display: none;
+    content: "-";
+}
+
+.menu summary h3 {
+    display: inline;
 }
 
 .menu .bienvenue h3 {
@@ -268,6 +280,10 @@ hr {
 
     position: relative;
     top: 30px;
+}
+.menu .bienvenue h3::before,
+.menu .bienvenue h3::after{
+    content:"-";
 }
 
 .menu .bienvenue em{
@@ -279,22 +295,6 @@ hr {
 
     position: relative;
     bottom: 25px; 
-}
-
-.menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    margin: 0 auto 10px;
-    padding:0;
-    transition: transform 0.3s ease-in-out;
-}
-
-.menu li:hover {
-    transform: translateY(-5px);
 }
 
 .menu .left {
