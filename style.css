@@ -148,7 +148,8 @@ main .contact {
 
 main .contact .formulaire input,
 main .contact .formulaire textarea {
-    width: 400px;
+    display: block;
+    width: 80%;
     height: 50px;
     margin: auto;
     padding-left: 25px;
@@ -342,9 +343,17 @@ ul {
     }
 
     main .contact {
-        grid-template-columns: auto auto;
+        grid-template-columns: 25% 25% 25% 25%;
         
-        margin-left: 25px;
+        margin: 0 25px;
+    }
+
+    main .contact .formulaire {
+        grid-column: 1 / 3;
+    }
+
+    main .contact .emplacement {
+        grid-column: 3 / 5;
     }
 
     main .contact .emplacement #map {
