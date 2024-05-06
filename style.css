@@ -156,13 +156,18 @@ main .contact .formulaire textarea {
     border: none;
     outline: none;
 
-    font-weight: 500;
     color: #666;
     border-radius: 50px;
 }
 
 main .contact .formulaire input {
     height: 50px;
+    font-weight: 500;
+}
+
+main .contact .formulaire input[type="button"] {
+    color: #1c1c1c;
+    background: #ffc400;
 }
 
 main .contact .formulaire textarea {
