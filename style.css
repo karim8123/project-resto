@@ -253,6 +253,10 @@ ul {
     margin: 0;
 }
 
+.menu {
+    padding: 24px;
+}
+
 .menu h2, .menu h3, .menu summary {
     text-align: center;
     font-family: 'Pacifico', cursive, sans-serif;
