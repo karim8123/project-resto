@@ -87,6 +87,15 @@ header .left {
     align-items: center;
 }
 
+header .left img {
+    transform:rotateY(0);
+    transition: transform ease-in .5s;
+}
+
+header .left img:hover {
+    transform: rotate(10deg);
+}
+
 header .left hr {
     padding: 0;
     height: 80%;
