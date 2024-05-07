@@ -140,7 +140,6 @@ main .presentation .contenu>section {
     padding: 24px;
 }
 
-
 main .bienvenue {
     text-align: center;
 }
@@ -214,6 +213,22 @@ main.menu {
     padding: 24px;
 }
 
+main.menu details em {
+    display: block;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive, sans-serif;
+    font-style: normal;
+}
+
+main.menu details em::before {
+    content: "(";
+    font-family: 'Lobster', sans-serif;
+}
+main.menu details em::after {
+    content: ")";
+    font-family: 'Lobster', sans-serif;
+}
+
 main.menu h2,
 main.menu h3,
 main.menu summary {
@@ -222,7 +237,10 @@ main.menu summary {
 }
 
 main.menu details summary {
+    color: #f5ae2b;
     transition: .5s ease-in-out transform;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 main.menu details summary:hover{
@@ -240,16 +258,18 @@ main.menu details[open] summary::marker {
     content: "-";
 }
 
-main.menu summary {
-    color: #f5ae2b;
-    text-decoration: none;
+main.menu details li {
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 24px;
 }
 
-main.menu details hr {
-    width: 80%;
-    margin: auto;
-    height: 2px;
+main.menu #commander {
+    
+    margin: 8px auto;
 }
+
 
 main.menu .bienvenue h3 {
     font-size: 30px;
@@ -284,7 +304,7 @@ footer {
 }
 
 footer a {
-    color: #fff4e0;
+    color: inherit;
 }
 
 footer h3 {
@@ -295,10 +315,6 @@ footer ul,
 footer h3 {
     text-align: center;
     margin: 0;
-}
-
-footer p {
-    text-indent: 0;
 }
 
 footer section {
@@ -339,8 +355,8 @@ strong {
     font-weight: bold;
 }
 
-p {
-    text-indent: 24px;
+strong.special {
+    text-decoration: underline;
 }
 
 a {
@@ -421,7 +437,7 @@ ul {
 }
 
 /* Tablettes et grand telephones */
-@media only screen and (min-width: 750px) and (max-width: 992px) {
+@media only screen and (min-width: 750px) and (max-width: 991px) {
     header h1 {
         font-size: 45px;
     }
@@ -464,7 +480,7 @@ ul {
 }
 
 /* Petit telephones */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 749px) {
     header h1 {
         font-size: 40px;
     }
