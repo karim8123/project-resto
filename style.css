@@ -94,7 +94,7 @@ header .left hr {
 }
 
 main .slogan {
-    background: url(images/background-resto2.png);
+    background: url(images/background-home2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,8 +102,6 @@ main .slogan {
 }
 
 main .slogan div {
-    /* display: flex;
-    justify-content: center;*/
     text-align: center; 
 
     width: 100%;
