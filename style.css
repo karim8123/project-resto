@@ -415,7 +415,7 @@ ul {
     }
 
     main .contact .emplacement #map {
-        width: 600px;
+        width: 490px;
         height: 400px;
     }
 
@@ -461,8 +461,8 @@ ul {
 
     main .contact {
         grid-template-columns: auto;
-        
-        margin-left: 25%;
+
+        margin-left: 5%;
     }
 
     main .contact .emplacement #map {
