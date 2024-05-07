@@ -94,8 +94,7 @@ header .left hr {
 }
 
 main .slogan {
-    position: relative;
-    background: url(images/background_home.jpg);
+    background: url(images/background-resto2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
