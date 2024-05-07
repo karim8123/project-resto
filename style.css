@@ -98,34 +98,36 @@ main .slogan {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
+
+    position: relative;
+    
 }
 
 main .slogan div {
-    text-align: center; 
 
-    width: 100%;
+    text-align: center;
     
     backdrop-filter: blur(0);
     opacity: 0;
     transition: ease-out 1s opacity, ease-out 1s backdrop-filter;
-    padding:200px 0;    
+    padding:200px 0;
 }
 
-main .slogan:hover div{
+main .slogan:hover div, .slogan:hover .download {
     opacity: 1;
     backdrop-filter: blur(5px);
-}
-main .slogan .download {
-    opacity: 1;
-    transition: ease-out 1s opacity;
-    align-content: end;
-    margin: 8px;
+    
 }
 
-.slogan:hover .download {
-    opacity: 1;
+main .slogan .download {
+    position: absolute;;
+    bottom: 4px;
+    right: 4px;
+    opacity: 0;
+    transition: ease-out 1s opacity, ease-out 1s backdrop-filter;
 }
+
+
 
 main .presentation {
     margin: 24px;
