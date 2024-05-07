@@ -208,10 +208,6 @@ main .contact .emplacement #map {
     border-radius: 25px;
 }
 
-main.menu {
-    padding: 24px;
-}
-
 main.menu details em {
     display: block;
     font-size: 15px;
