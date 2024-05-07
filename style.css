@@ -248,13 +248,11 @@ main.menu details summary:hover{
 }
 
 main.menu details summary::marker {
-    display: none;
     content: "+";
     color: #1c1c1c;
 }
 
 main.menu details[open] summary::marker {
-    display: none;
     content: "-";
 }
 
