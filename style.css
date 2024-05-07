@@ -98,12 +98,13 @@ main .slogan {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
 }
 
 main .slogan div {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    /* display: flex;
+    justify-content: center;*/
+    text-align: center; 
 
     width: 100%;
     
@@ -113,17 +114,19 @@ main .slogan div {
     padding:200px 0;    
 }
 
-main .slogan:hover div, .slogan:hover .download{
+main .slogan:hover div{
     opacity: 1;
     backdrop-filter: blur(5px);
 }
 main .slogan .download {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 8px;
-    opacity: 0;
+    opacity: 1;
     transition: ease-out 1s opacity;
+    align-content: end;
+    margin: 8px;
+}
+
+.slogan:hover .download {
+    opacity: 1;
 }
 
 main .presentation {
