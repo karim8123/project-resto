@@ -89,11 +89,11 @@ header .left {
 
 header .left img {
     transform:rotateY(0);
-    transition: transform ease-in .5s;
+    transition: transform ease-out .5s;
 }
 
 header .left img:hover {
-    transform: rotate(10deg);
+    transform: rotate(370deg);
 }
 
 header .left hr {
