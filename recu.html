@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo_color.png" type="image/png">
-    <title>Le Poulet Doré - Contactez nous</title>
+    <title>Le Poulet Doré - Message reçu</title>
 </head>
 
 <body>
@@ -17,10 +17,12 @@
                     <img src="images/logo.png" alt="Logo de notre restaurant">
                 </a>
             </div>
-            <hr>
+            <hr class="vertical">
         </div>
 
-        <h1>Le Poulet Doré</h1>
+        <h1>
+            Le Poulet Doré
+        </h1>
 
         <nav>
             <ul>
@@ -31,60 +33,16 @@
                     <a href="menu.html">MENU</a>
                 </li>
                 <li>
-                    <a class="selected" href="contact.html">CONTACTEZ-NOUS</a>
+                    <a href="contact.html">CONTACTEZ-NOUS</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <hr>
-
-    <main>
-        <section class="bienvenue">
-            <h2>Contactez Nous</h2>
-            <p>
-                Venez manger un bout ou laissez nous un message
-            </p>
-        </section>
-
-        <div class="contact">
-            <section class="formulaire">
-                <h3>Nous envoyer un message:</h3>
-                <form action="recu.html" method="get">
-                    <p>
-                        <label for="username">Votre pseudo:</label>
-                        <input name="username" type="text" placeholder="Pseudo">
-                    </p>
-
-                    <p>
-                        <label for="mail">Votre e-mail:</label>
-                        <input name="mail" type="text" placeholder="Mail">
-                    </p>
-
-                    <p>
-                        <label for="message">Votre message:</label>
-                        <textarea name="message" type="text" cols="5" placeholder="Message"></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Envoyer">
-                    </p>
-                </form>
-            </section>
-
-            <section class="emplacement">
-                <h3>Notre adresse:</h3>
-                <p>
-                    Vous pouvez retrouver notre restaurant au <address> 777 bastos, Tizi-Ouzou , Algerie</address>.
-                </p>
-                <iframe id="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.100092275099!2d4.0558063!3d36.6961326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128dc816c66438fb%3A0x390274960dacce78!2sD%C3%A9partement%20d&#39;informatique!5e0!3m2!1sfr!2sdz!4v1714844909234!5m2!1sfr!2sdz"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </section>
-        </div>
+    <main class="recu">
+        <p>Votre message a bien été reçu.</p>
     </main>
-
     <hr class="footer">
 
     <footer>

@@ -179,17 +179,17 @@ main .contact .formulaire input {
     font-weight: 500;
 }
 
-main .contact .formulaire input[type="button"] {
+main .contact .formulaire input[type="submit"] {
     color: #1c1c1c;
     background: #ffc400;
     cursor: pointer;
 }
 
-main .contact .formulaire input[type="button"]:hover {
+main .contact .formulaire input[type="submit"]:hover {
     background: #f5ae2b;
 }
 
-main .contact .formulaire input[type="button"]:active {
+main .contact .formulaire input[type="submit"]:active {
     background: #f39f46;
 }
 
@@ -198,8 +198,11 @@ main .contact .formulaire textarea {
     padding-top: 25px;
 }
 
-main .contact .formulaire #recu {
-    display: none;
+main.recu {
+    padding: 8% 0;
+}
+
+main.recu p {
     width: 83%;
     padding: 10px 20px;
     margin: 25px;
@@ -271,18 +274,34 @@ main.menu details li {
 }
 
 main.menu #commander {
-    
     margin: 8px auto;
 }
 
+main.menu .bande {
+    background: #fae8c5;
+    height: 30px;
+    
+}
+
+main.menu .bienvenue{
+    background: #fff4e0;
+    position: relative;
+
+    margin: 30px 0;
+    height: 100px;
+}
 
 main.menu .bienvenue h3 {
     font-size: 30px;
     text-decoration: none;
+    position: absolute;
+    margin:0;
 
-    position: relative;
-    top: 30px;
+    top: 0;
+    left: calc(50% - 86px);
 }
+
+
 
 main.menu .bienvenue h3::before,
 main.menu .bienvenue h3::after {
@@ -296,8 +315,9 @@ main.menu .bienvenue em {
     font-style: normal;
     font-size: 55px;
 
-    position: relative;
-    bottom: 25px;
+    position: absolute;
+    left: calc(50% - 122px);
+    bottom: 0;
 }
 
 footer {
