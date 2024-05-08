@@ -179,19 +179,7 @@ main .contact .formulaire input {
     font-weight: 500;
 }
 
-main .contact .formulaire input[type="submit"] {
-    color: #1c1c1c;
-    background: #ffc400;
-    cursor: pointer;
-}
 
-main .contact .formulaire input[type="submit"]:hover {
-    background: #f5ae2b;
-}
-
-main .contact .formulaire input[type="submit"]:active {
-    background: #f39f46;
-}
 
 main .contact .formulaire textarea {
     height: 200px;
@@ -221,6 +209,16 @@ main .contact .emplacement address{
 
 main .contact .emplacement #map {
     border-radius: 25px;
+}
+
+main.menu .propositions {
+    display: flex;
+    flex-direction: column;
+}
+
+main.menu .propositions input[type="submit"] {
+    position: relative;
+    left: calc(50% - 70px);
 }
 
 main.menu details em {
@@ -271,16 +269,6 @@ main.menu details li {
     justify-content: space-between;
 
     margin-right: 24px;
-}
-
-main.menu #commander {
-    margin: 8px auto;
-}
-
-main.menu .bande {
-    background: #fae8c5;
-    height: 30px;
-    
 }
 
 main.menu .bienvenue{
@@ -408,6 +396,28 @@ hr.footer {
 
 ul {
     list-style-type: none;
+}
+
+input[type="submit"] {
+    color: #1c1c1c;
+    background: #ffc400;
+    cursor: pointer;
+    display: block;
+
+    margin: 12px auto;
+    padding: 10px 25px;
+
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+input[type="submit"]:hover {
+    background: #f5ae2b;
+}
+
+input[type="submit"]:active {
+    background: #f39f46;
 }
 
 /* Laptops et Ordinateurs de bureaux */
