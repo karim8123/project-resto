@@ -222,6 +222,7 @@ main.menu .propositions input[type="number"] {
     padding: 8px;
     text-align: center;
 
+    -moz-appearance: textfield;
     appearance: textfield;
     background: #fff;
 
@@ -231,6 +232,11 @@ main.menu .propositions input[type="number"] {
 
     position: relative;
     bottom: 3px;
+}
+
+main.menu .propositions input[type="number"]::-webkit-inner-spin-button,
+main.menu .propositions input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 main.menu .propositions input[type="submit"] {
