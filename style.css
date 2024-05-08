@@ -221,6 +221,42 @@ main.menu .propositions input[type="number"] {
     position: relative;
     bottom: 3px;
 }
+/*menu image*/
+main.menu .img_etrees{
+    display:block;
+    width: 10%;
+    height: 10%;
+    margin-left: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+}
+main.menu .img_plats {
+    display:block;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    margin-right: 10spx;
+    right: 50%;
+}
+main.menu .img_dessert{
+    display:block;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    margin-right: 10spx;
+    right: 50%;
+}
+main.menu .img_boisson{
+    display:block;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    margin-right: 55px;
+    right: 50%;
+}
+
+
 
 main.menu .propositions input[type="number"]::-webkit-inner-spin-button,
 main.menu .propositions input[type="number"]::-webkit-outer-spin-button {
