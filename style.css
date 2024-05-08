@@ -216,6 +216,23 @@ main.menu .propositions {
     flex-direction: column;
 }
 
+main.menu .propositions input[type="number"] {
+    margin: 8px;
+    width: 15px;
+    padding: 8px;
+    text-align: center;
+
+    appearance: textfield;
+    background: #fff;
+
+    outline: none;
+    border: none;
+    border-radius: 25px;
+
+    position: relative;
+    bottom: 3px;
+}
+
 main.menu .propositions input[type="submit"] {
     position: relative;
     left: calc(50% - 70px);
