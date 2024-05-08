@@ -34,15 +34,24 @@ header h1 {
     margin: auto;
 }
 
-header nav {
-    margin: auto 24px;
+header .left {
+    display: flex;
+    align-items: center;
 }
 
-header nav li {
-    display: inline;
-    font-size: 24px;
-    margin: 4px;
-    padding: 4px;
+header .left img {
+    transform: rotateY(0);
+    transition: transform ease-out .5s;
+}
+
+header .left img:hover {
+    transform: rotate(370deg);
+}
+
+header .left hr {
+    padding: 0;
+    height: 80%;
+    border-right: 2px solid #1c1c1c;
 }
 
 header nav a {
@@ -66,6 +75,11 @@ header nav a::after {
     transition: 0.3s ease-in-out width, 0.3s ease-in-out left;
 }
 
+header nav a.selected::after {
+    width: 100%;
+    left: 0;
+}
+
 header nav a:hover {
     text-decoration: none;
     transform: translateY(-3px);
@@ -76,32 +90,6 @@ header nav a:hover::after {
     left: 0;
 }
 
-header nav a.selected::after {
-    width: 100%;
-    left: 0;
-}
-
-header .left {
-    display: flex;
-
-    align-items: center;
-}
-
-header .left img {
-    transform:rotateY(0);
-    transition: transform ease-out .5s;
-}
-
-header .left img:hover {
-    transform: rotate(370deg);
-}
-
-header .left hr {
-    padding: 0;
-    height: 80%;
-    border-right: 2px solid #1c1c1c;
-}
-
 main .slogan {
     background: url(images/background-home2.png);
     background-size: cover;
@@ -109,34 +97,34 @@ main .slogan {
     background-repeat: no-repeat;
 
     position: relative;
-    
+
 }
 
 main .slogan div {
 
     text-align: center;
-    
+
     backdrop-filter: blur(0);
     opacity: 0;
     transition: ease-out 1s opacity, ease-out 1s backdrop-filter;
-    padding:200px 0;
+    padding: 200px 0;
 }
 
-main .slogan:hover div, .slogan:hover .download {
+main .slogan:hover div,
+.slogan:hover .download {
     opacity: 1;
     backdrop-filter: blur(5px);
-    
+
 }
 
 main .slogan .download {
-    position: absolute;;
+    position: absolute;
+    ;
     bottom: 4px;
     right: 4px;
     opacity: 0;
     transition: ease-out 1s opacity, ease-out 1s backdrop-filter;
 }
-
-
 
 main .presentation {
     margin: 24px;
@@ -199,7 +187,7 @@ main.recu p {
     border-radius: 25px;
 }
 
-main .contact .emplacement address{
+main .contact .emplacement address {
     display: inline;
 
     text-decoration: dotted underline;
@@ -255,6 +243,7 @@ main.menu details em::before {
     content: "(";
     font-family: 'Lobster', sans-serif;
 }
+
 main.menu details em::after {
     content: ")";
     font-family: 'Lobster', sans-serif;
@@ -274,7 +263,7 @@ main.menu details summary {
     text-decoration: none;
 }
 
-main.menu details summary:hover{
+main.menu details summary:hover {
     transform: translateY(-5px);
 }
 
@@ -294,7 +283,7 @@ main.menu details li {
     margin-right: 24px;
 }
 
-main.menu .bienvenue{
+main.menu .bienvenue {
     background: #fff4e0;
     position: relative;
 
@@ -306,7 +295,7 @@ main.menu .bienvenue h3 {
     font-size: 30px;
     text-decoration: none;
     position: absolute;
-    margin:0;
+    margin: 0;
 
     top: 0;
     left: calc(50% - 86px);
@@ -367,7 +356,8 @@ footer .horraire ul>li:nth-child(2n+1) {
 }
 
 h2,
-h3, summary {
+h3,
+summary {
     font-style: normal;
     font-weight: 500;
     text-decoration: underline;
@@ -377,7 +367,8 @@ h2 {
     font-size: xx-large;
 }
 
-h3, em {
+h3,
+em {
     color: #f5ae2b;
 }
 
@@ -449,6 +440,25 @@ input[type="submit"]:active {
         font-size: 60px;
     }
 
+    header .nav-container {
+        margin: auto 0;
+    }
+
+    header nav.big-device {
+        margin: auto 24px;
+    }
+
+    header nav.big-device li {
+        display: inline;
+        font-size: 24px;
+        margin: 4px;
+        padding: 4px;
+    }
+
+    nav.small-device {
+        display: none;
+    }
+
     main .presentation .contenu {
         grid-template-columns: auto auto auto;
     }
@@ -464,7 +474,7 @@ input[type="submit"]:active {
 
     main .contact {
         grid-template-columns: 25% 25% 25% 25%;
-        
+
         margin: 0 25px;
     }
 
@@ -484,7 +494,7 @@ input[type="submit"]:active {
     footer {
         grid-template-columns: 25% 25% 25% 25%;
     }
-    
+
     footer .contact {
         grid-column: 2 / 3;
     }
@@ -497,13 +507,82 @@ input[type="submit"]:active {
 /* Tablettes et grand telephones */
 @media only screen and (min-width: 750px) and (max-width: 991px) {
     header h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
-    header nav{
-        display: none;
+    header .nav-container {
+        position: relative;
+        width: 20%;
     }
-    
+
+    header nav.big-device {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        right: 20px;
+        background: #fff4e0;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+        text-align: center;
+    }
+
+    header nav.big-device ul {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    header nav.big-device a {
+        margin: 7px 0;
+    }
+
+    header nav.small-device {
+        background-color: #fff4e0;
+        width: 100%;
+        height: 80%;
+        border-radius: 50px;
+        position: relative;
+        right: 20px;
+        transition: transform ease-in-out .1s;
+    }
+
+    header nav.small-device .element {
+        height: 14%;
+        width: 50%;
+        border-radius: 50px;
+        top: 10px;
+        position: relative;
+
+        margin: 10px auto;
+        background: #f5ae2b;
+
+        transition: transform ease-in-out .3s;
+    }
+
+    header nav.small-device:hover .element:first-child {
+        transform: translateY(5px);
+    }
+
+    header nav.small-device:hover .element:nth-child(3) {
+        transform: translateY(-5px);
+    }
+
+    header .nav-container:hover nav.small-device {
+        transform: translateY(10px);
+        border-radius: 25px 25px 0 0;
+    }
+
+    header .nav-container:hover nav.big-device {
+        display: block;
+        border-bottom: solid 1px #1c1c1c;
+        border-left: solid 1px #1c1c1c;
+    }
+
+    header .left img {
+        max-width: 72px;
+        max-height: auto;
+    }
+
     main .presentation .contenu {
         grid-template-columns: auto auto;
     }
@@ -543,11 +622,75 @@ input[type="submit"]:active {
         font-size: 40px;
     }
 
-    header nav{
-        display: none;
+    header .nav-container {
+        position: relative;
+        width: 20%;
     }
 
-    header .left img{
+    header nav.big-device {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        right: 20px;
+        background: #fff4e0;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+        text-align: center;
+    }
+
+    header nav.big-device ul {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    header nav.big-device a {
+        margin: 7px 0;
+    }
+
+    header nav.small-device {
+        background-color: #fff4e0;
+        width: 100%;
+        height: 80%;
+        border-radius: 50px;
+        position: relative;
+        right: 20px;
+        transition: transform ease-in-out .1s;
+    }
+
+    header nav.small-device .element {
+        height: 14%;
+        width: 50%;
+        border-radius: 50px;
+        top: 10px;
+        position: relative;
+
+        margin: 10px auto;
+        background: #f5ae2b;
+
+        transition: transform ease-in-out .3s;
+    }
+
+    header nav.small-device:hover .element:first-child {
+        transform: translateY(5px);
+    }
+
+    header nav.small-device:hover .element:nth-child(3) {
+        transform: translateY(-5px);
+    }
+
+    header .nav-container:hover nav.small-device {
+        transform: translateY(10px);
+        border-radius: 25px 25px 0 0;
+    }
+
+    header .nav-container:hover nav.big-device {
+        display: block;
+        border-bottom: solid 1px #1c1c1c;
+        border-left: solid 1px #1c1c1c;
+    }
+
+    header .left img {
         max-width: 72px;
         max-height: auto;
     }
@@ -570,7 +713,7 @@ input[type="submit"]:active {
 
     main .contact {
         grid-template-columns: auto;
-        
+
         margin-left: 5%;
     }
 
