@@ -407,6 +407,7 @@ main.menu .bienvenue em {
 }
 
 footer {
+    position: relative;
     display: grid;
 
     background: #1c1c1c;
@@ -442,8 +443,7 @@ footer .horraire ul>li:nth-child(2n+1) {
 }
 
 footer em{
-    position: absolute;
-    margin-top: 145px;
+    margin: auto;
 }
 
 h2,
@@ -593,6 +593,13 @@ input[type="submit"]:active {
     footer .horraire {
         grid-column: 3 / 4;
     }
+
+    footer em {
+        position: relative;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        left: 50%;
+    }
 }
 
 /* Tablettes et grand telephones */
@@ -705,6 +712,11 @@ input[type="submit"]:active {
     footer {
         grid-template-columns: auto auto;
     }
+
+    footer em {
+        position:relative;
+        left: 50%
+    }
 }
 
 /* Petit telephones */
@@ -815,5 +827,10 @@ input[type="submit"]:active {
 
     footer {
         grid-template-columns: auto;
+    }
+
+    footer em {
+        position: relative;
+        left: 20px;
     }
 }
