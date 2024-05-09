@@ -39,15 +39,6 @@ header .left {
     align-items: center;
 }
 
-header .left img {
-    transform: rotateY(0);
-    transition: transform ease-out .5s;
-}
-
-header .left img:hover {
-    transform: rotate(370deg);
-}
-
 header .left hr {
     padding: 0;
     height: 80%;
@@ -233,7 +224,7 @@ main.menu details>ul>li .bas input[type="button"]:first-child {
 
 main.menu details>ul>li .bas input[type="button"]:last-child {
     right: 10px;
-    border-radius:  0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
 }
 
 main.menu .propositions input[type="number"]::-webkit-inner-spin-button,
@@ -294,8 +285,6 @@ main.menu details>ul {
     grid-template-columns: auto auto auto auto;
     gap: 20px 10px;
 
-    justify-content: center;
-
     padding-left: 10px;
     position: relative;
 }
@@ -314,8 +303,8 @@ main.menu details>ul>li {
 }
 
 main.menu details>ul>li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px #504f4f;
+    transform: translateY(-7px);
+    box-shadow: 0 7px #504f4f;
 }
 
 main.menu details>ul>li>h3 {
@@ -583,7 +572,7 @@ input[type="submit"]:active {
 
     header nav.small-device {
         background-color: #fff4e0;
-        width: 100%;
+        width: 135px;
         height: 80%;
         border-radius: 50px;
         position: relative;
@@ -664,7 +653,7 @@ input[type="submit"]:active {
 /* Petit telephones */
 @media only screen and (max-width: 749px) {
     header h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     header .nav-container {
@@ -695,7 +684,7 @@ input[type="submit"]:active {
 
     header nav.small-device {
         background-color: #fff4e0;
-        width: 100%;
+        width: 80px;
         height: 80%;
         border-radius: 50px;
         position: relative;
