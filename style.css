@@ -265,6 +265,10 @@ main.menu summary {
     font-family: 'Pacifico', cursive, sans-serif;
 }
 
+main.menu details strong {
+    color: #f5ae2b;
+}
+
 main.menu details summary {
     color: #f5ae2b;
     transition: .5s ease-in-out transform;

@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo_color.png" type="image/png">
     <title>Le Poulet Doré - Notre menu</title>
+
+    <script>
+        function addQte(idQte) {
+            qte = parseInt(document.getElementById(idQte).getAttribute("value"));
+            
+            if(qte < 9) {
+                if(qte < 0)
+                    document.getElementById(idQte).setAttribute("value", 0);
+                else
+                    document.getElementById(idQte).setAttribute("value", qte+1);
+            }
+           
+        }
+
+        function sousQte(idQte) {
+                qte = parseInt(document.getElementById(idQte).getAttribute("value"));
+                if (qte > 0) {
+                    if (qte > 9)
+                        document.getElementById(idQte).setAttribute("value", 9);
+                    else
+                        document.getElementById(idQte).setAttribute("value", qte - 1);
+                }
+            }
+    </script>
 </head>
 
 <body>
@@ -73,9 +97,9 @@
                             
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-salade-cesar')">
+                                    <input id="qte-salade-cesar" name="qte-salade-cesar" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-salade-cesar')">
                                 </div>
                                 <strong>250DA</strong>
                             </div>
