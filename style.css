@@ -315,15 +315,15 @@ main.menu details>ul>li:hover {
 }
 
 main.menu details>ul>li .flip-card-interne {
-    position: absolute;
+    position: relative;
     transform-style: preserve-3d;
     perspective: 1000px;
 
     width: 300px;
     height: 300px;
 
-    transition: transform ease-in-out .3s;
-    bottom: 0;
+    transition: transform ease-in-out .5s;
+    bottom: 25px;
 }
 
 main.menu details>ul>li:hover .flip-card-interne{
@@ -334,8 +334,6 @@ main.menu details>ul>li .flip-card-avant,
 main.menu details>ul>li .flip-card-avant img,
 main.menu details>ul>li .flip-card-arriere {
     border-radius: 25px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 main.menu details>ul>li .flip-card-avant,
@@ -343,19 +341,25 @@ main.menu details>ul>li:hover .flip-card-arriere {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+main.menu details>ul>li .flip-card-avant {
+    transition: opacity ease-in-out .5s;
 }
 
 main.menu details>ul>li:hover .flip-card-avant {
-    visibility: hidden;
-    box-shadow: 0 7px #504f4f;
+    opacity: 0;
 }
 
 main.menu details>ul>li .flip-card-arriere {
-    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease-in-out .3s;
 }
 
 main.menu details>ul>li:hover .flip-card-arriere {
-    visibility: visible;
+    opacity: 1;
     transform: rotateY(180deg);
 }
 
