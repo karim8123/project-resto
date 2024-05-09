@@ -213,6 +213,10 @@ main.menu details>ul>li .bas input[type="number"] {
     text-align: center;
     width: 15px;
 }
+
+main.menu details>ul>li .bas input[type="number"]:disabled{
+    color: #1c1c1c;
+}
 main.menu details>ul>li .bas input[type="button"]{
     cursor: pointer;
 }

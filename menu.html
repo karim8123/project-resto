@@ -76,7 +76,7 @@
                             <div class="bas">
                                 <div class="qte">
                                     <input type="button" value="-" onclick="sousQte('qte-salade-cesar')">
-                                    <input id="qte-salade-cesar" name="qte-salade-cesar" type="number" min="0" max="9" value="0">
+                                    <input disabled id="qte-salade-cesar" name="qte-salade-cesar" type="number" min="0" max="9" value="0">
                                     <input type="button" value="+" onclick="addQte('qte-salade-cesar')">
                                 </div>
                                 <strong>250DA</strong>
@@ -89,9 +89,9 @@
                                     baguette</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-soupe-oignon')">
+                                    <input disabled id="qte-soupe-oignon" name="qte-soupe-oignon" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-soupe-oignon')">
                                 </div>
                                 <strong>270DA</strong>
                             </div>
@@ -102,9 +102,9 @@
                                     poivre</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-bourek')">
+                                    <input disabled id="qte-bourek" name="qte-bourek" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-bourek')">
                                 </div>
                                 <strong>300DA</strong>
                             </div>
@@ -114,9 +114,9 @@
                                 <em>Riz - Fromage - Maïs - Paté de volaille</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-macedoine')">
+                                    <input disabled id="qte-macedoine" name="qte-macedoine" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-bourek')">
                                 </div>
                                 <strong>300DA</strong>
                             </div>
@@ -133,33 +133,33 @@
                         <em>Poulet - Épices - Legumes - Huile d'olive</em>
                         <div class="bas">
                             <div class="qte">
-                                <input type="button" value="-">
-                                <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                <input type="button" value="+">
+                                <input type="button" value="-" onclick="sousQte('qte-tajin-poulet')">
+                                <input disabled id="qte-tajin-poulet" name="qte-tajin-poulet" type="number" min="0" max="9" value="0">
+                                <input type="button" value="+" onclick="addQte('qte-tajin-poulet')">
                             </div>
                             <strong>350DA</strong>
                         </div>
                     </li>
                         <li>
-                            <h3>Pouelt rotie</h3>
+                            <h3>Poulet rotie</h3>
                             <em>Poulet entier - Épices - Huile d'olive</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-poulet-rotie')">
+                                    <input disabled id="qte-poulet-rotie" name="qte-poulet-rotie" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-poulet-rotie')">
                                 </div>
                                 <strong>250DA</strong>
                             </div>
                         </li>
                         <li>
-                            <h3>Poulet frie</h3>
+                            <h3>Poulet frit</h3>
                             <em>Morceaux de poulet frit - Œufs - Frite</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-poulet-frit')">
+                                    <input disabled id="qte-poulet-frit" name="qte-poulet-frit" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-poulet-frit')">
                                 </div>
                                 <strong>290DA</strong>
                             </div>
@@ -169,9 +169,9 @@
                             <em>Blancs de poulet - Poivrons - Oignon rouge - Champignons - Marinade</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-brochette-poulet')">
+                                    <input disabled id="qte-brochette-poulet" name="qte-brochette-poulet" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-brochette-poulet')">
                                 </div>
                                 <strong>300DA</strong>
                             </div>
@@ -181,9 +181,9 @@
                             <em>Poulet cuit - Pommes de terre - Crème - Fromage râpé - Sel et poivre</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-gratin-poulet')">
+                                    <input disabled id="qte-gratin-poulet" name="qte-gratin-poulet" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-gratin-poulet')">
                                 </div>
                                 <strong>400DA</strong>
                             </div>
@@ -193,9 +193,9 @@
                             <em>Poulet - Épices - Legumes - Curry</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-poulet-curry')">
+                                    <input disabled id="qte-poulet-curry" name="qte-poulet-curry" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-poulet-curry')">
                                 </div>
                                 <strong>450DA</strong>
                             </div>
@@ -205,21 +205,21 @@
                             <em>Escalope de poulet - Fromage - Œufs - Épices</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-cordon-bleu')">
+                                    <input disabled id="qte-cordon-bleu" name="qte-cordon-bleu" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-cordon-bleu')">
                                 </div>
                                 <strong>500DA</strong>
                             </div>
                         </li>
                         <li>
-                            <h3>Poulet dorer</h3>
+                            <h3>Poulet doré</h3>
                             <em>Morceau de Poulet- Marinade spéciale - Surprise du Chef</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-poulet-dore')">
+                                    <input disabled id="qte-poulet-dore" name="qte-poulet-dore" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-poulet-dore')">
                                 </div>
                                 <strong>777DA</strong>
                             </div>
@@ -236,9 +236,9 @@
                             <em>Choix: Framboise - Fraise - Vanille</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-cheese-cake')">
+                                    <input disabled id="qte-cheese-cake" name="qte-cheese-cake" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-cheese-cake')">
                                 </div>
                                 <strong>250DA</strong>
                             </div>
@@ -248,9 +248,9 @@
                             <em>Choix: Chocolat Blanc - au lait - Noire</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-mousse-choco')">
+                                    <input disabled id="qte-mousse-choco" name="qte-mousse-choco" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-mousse-choco')">
                                 </div>
                                 <strong>200DA</strong>
                             </div>
@@ -260,9 +260,9 @@
                             <em>Optionnel: Collier en Fromboise</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-peache-melba')">
+                                    <input disabled id="qte-peache-melba" name="qte-peache-melba" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-peache-melba')">
                                 </div>
                                 <strong>300DA</strong>
                             </div>
@@ -272,9 +272,9 @@
                             <em>Supplement: Nutella - Banane - Baies</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-gauffre')">
+                                    <input disabled id="qte-gauffre" name="qte-gauffre" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-gauffre')">
                                 </div>
                                 <strong>250DA</strong>
                             </div>
@@ -284,9 +284,9 @@
                             <em>Choix: Petite ou Grande</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-tarte-pomme')">
+                                    <input disabled id="qte-tarte-pomme" name="qte-tarte-pomme" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-tarte-pomme')">
                                 </div>
                                 <strong>250DA</strong>
                             </div>
@@ -296,9 +296,9 @@
                             <em>Choix: Petit ou Grand</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-tiramisu')">
+                                    <input disabled id="qte-tiramisu" name="qte-tiramisu" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-tiramisu')">
                                 </div>
                                 <strong>200DA</strong>
                             </div>
@@ -315,9 +315,9 @@
                             <em>Choix: Glacé ou pas</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-eau-1l')">
+                                    <input disabled id="qte-eau-1l" name="qte-eau-1l" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-eau-1l')">
                                 </div>
                                 <strong>100DA</strong>
                             </div>
@@ -327,9 +327,9 @@
                             <em>Choix: Glacé ou pas</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-eau-33cl')">
+                                    <input disabled id="qte-eau-33cl" name="qte-eau-33cl" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-eau-33cl')">
                                 </div>
                                 <strong>60DA</strong>
                             </div>
@@ -339,9 +339,9 @@
                             <em>Choix: Glacé ou pas</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-coca-1l')">
+                                    <input disabled id="qte-coca-1l" name="qte-coca-1l" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-coca-1l')">
                                 </div>
                                 <strong>140DA</strong>
                             </div>
@@ -351,9 +351,9 @@
                             <em>Choix: Avec ou sans glaçons</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-coca-33cl')">
+                                    <input disabled id="qte-coca-33cl" name="qte-coca-33cl" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-coca-33cl')">
                                 </div>
                                 <strong>70DA</strong>
                             </div>
@@ -363,9 +363,9 @@
                             <em>Choix: Pommes - Orange - Citron</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-jus-frais')">
+                                    <input disabled id="qte-jus-frais" name="qte-jus-frais" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-jus-frais')">
                                 </div>
                                 <strong>150DA</strong>
                             </div>
@@ -375,9 +375,9 @@
                             <em>Choix: Gin Fizz - Mai Tai - Tquila</em>
                             <div class="bas">
                                 <div class="qte">
-                                    <input type="button" value="-">
-                                    <input name="qte-salade-cesar" type="number" min="0" max="9" value="0">
-                                    <input type="button" value="+">
+                                    <input type="button" value="-" onclick="sousQte('qte-cocktails')">
+                                    <input disabled id="qte-cocktails" name="qte-cocktails" type="number" min="0" max="9" value="0">
+                                    <input type="button" value="+" onclick="addQte('qte-cocktails')">
                                 </div>
                                 <strong>250DA</strong>
                             </div>
