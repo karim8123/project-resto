@@ -671,8 +671,7 @@ input[type="submit"]:active {
 
     header .nav-container:hover nav.big-device {
         display: block;
-        border-bottom: solid 1px #1c1c1c;
-        border-left: solid 1px #1c1c1c;
+        box-shadow: -1px 1px #1c1c1c;
     }
 
     header .left img {
@@ -786,8 +785,7 @@ input[type="submit"]:active {
 
     header .nav-container:hover nav.big-device {
         display: block;
-        border-bottom: solid 1px #1c1c1c;
-        border-left: solid 1px #1c1c1c;
+        box-shadow: -1px 1px #1c1c1c;
     }
 
     header .left img {
