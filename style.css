@@ -167,8 +167,6 @@ main .contact .formulaire input {
     font-weight: 500;
 }
 
-
-
 main .contact .formulaire textarea {
     height: 200px;
     padding-top: 25px;
@@ -270,20 +268,36 @@ main.menu details[open] summary::marker {
 }
 
 main.menu details>ul {
+    padding-left: 10px;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 20px;
+    gap: 20px 10px;
     position: relative;
 }
 
 main.menu details>ul>li {
+    width: 300px;
+    height: 300px;
     background: #ffebcc;
     border-radius: 25px;
     text-align: center;
+
+    position: relative;
+
+    transition: transform ease-in-out .3s;
+}
+
+main.menu details>ul>li:hover {
+    transform: translateY(-5px);
 }
 
 main.menu details>ul>li>h3 {
     color: #1c1c1c;
+}
+main.menu details>ul>li>.bas {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 45px);
 }
 
 main.menu .bienvenue {
