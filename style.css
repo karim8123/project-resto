@@ -309,11 +309,13 @@ main.menu details>ul>li {
 
     position: relative;
 
-    transition: transform ease-in-out .3s;
+    transition: box-shadow ease-in-out .3s,
+                transform ease-in-out .3s;
 }
 
 main.menu details>ul>li:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px #cca300;
 }
 
 main.menu details>ul>li>h3 {
