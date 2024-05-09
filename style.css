@@ -443,6 +443,7 @@ footer .horraire ul>li:nth-child(2n+1) {
 
 footer em {
     margin: 0 auto;
+    text-align: center;
 }
 
 h2,
