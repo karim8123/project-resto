@@ -236,19 +236,10 @@ main.menu .propositions input[type="submit"] {
 
 main.menu details em {
     display: block;
+    text-align: center;
     font-size: 15px;
     font-family: 'Pacifico', cursive, sans-serif;
     font-style: normal;
-}
-
-main.menu details em::before {
-    content: "(";
-    font-family: 'Lobster', sans-serif;
-}
-
-main.menu details em::after {
-    content: ")";
-    font-family: 'Lobster', sans-serif;
 }
 
 main.menu h2,
@@ -278,11 +269,21 @@ main.menu details[open] summary::marker {
     content: "-";
 }
 
-main.menu details li {
-    display: flex;
-    justify-content: space-between;
+main.menu details>ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    position: relative;
+}
 
-    margin-right: 24px;
+main.menu details>ul>li {
+    background: #ffebcc;
+    border-radius: 25px;
+    text-align: center;
+}
+
+main.menu details>ul>li>h3 {
+    color: #1c1c1c;
 }
 
 main.menu .bienvenue {
@@ -492,7 +493,7 @@ input[type="submit"]:active {
         width: 490px;
         height: 400px;
     }
-        /*menu image*/
+        /* menu image
         main.menu .img_etrees {
             display: block;
             width: 10%;
@@ -528,7 +529,7 @@ input[type="submit"]:active {
             position: absolute;
             margin-right: 55px;
             right: 50%;
-        }
+        } */
 
     footer {
         grid-template-columns: 25% 25% 25% 25%;
