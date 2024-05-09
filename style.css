@@ -281,11 +281,9 @@ main.menu details[open] summary::marker {
 }
 
 main.menu details>ul {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px 10px;
-
-    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
 }
 
@@ -295,6 +293,7 @@ main.menu details>ul>li {
     background: #ffebcc;
     border-radius: 25px;
     text-align: center;
+    margin: 10px 5px;
 
     position: relative;
 
