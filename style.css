@@ -313,19 +313,18 @@ main.menu details>ul>li {
 }
 
 main.menu details>ul>li:hover {
-    transform: translateY(-7px);
-    transform: rotateY(180deg);
+    transform: translateY(-7px) rotateY(180deg);
     box-shadow: 0 7px #504f4f;
 }
 
-main.menu details>ul>li .flip-card-front,
-main.menu details>ul>li .flip-card-front img,
-main.menu details>ul>li .flip-card-back {
+main.menu details>ul>li .flip-card-avant,
+main.menu details>ul>li .flip-card-avant img,
+main.menu details>ul>li .flip-card-arriere {
     border-radius: 25px;
 }
 
-main.menu details>ul>li .flip-card-front,
-main.menu details>ul>li:hover .flip-card-back {
+main.menu details>ul>li .flip-card-avant,
+main.menu details>ul>li:hover .flip-card-arriere {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -333,21 +332,22 @@ main.menu details>ul>li:hover .flip-card-back {
     backface-visibility: hidden;
 }
 
-main.menu details>ul>li .flip-card-front {
+main.menu details>ul>li .flip-card-avant {
+    transition: opacity .5s ease-in-out;
+    opacity: 1
+}
+
+main.menu details>ul>li:hover .flip-card-avant {
+    opacity: 0;
+}
+
+main.menu details>ul>li .flip-card-arriere {
+    opacity: 0;
     transition: display .5s ease-in-out;
 }
 
-main.menu details>ul>li:hover .flip-card-front {
-    display: none
-}
-
-main.menu details>ul>li .flip-card-back {
-    display: none;
-    transition: display .5s ease-in-out;
-}
-
-main.menu details>ul>li:hover .flip-card-back {
-    display: block;
+main.menu details>ul>li:hover .flip-card-arriere {
+    opacity: 1;
     transform: rotateY(180deg);
 }
 
