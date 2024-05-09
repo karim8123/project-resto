@@ -176,9 +176,7 @@ main.recu p {
     border-radius: 25px;
 }
 
-main .contact .emplacement address {
-    display: inline;
-
+main .contact .emplacement em {
     text-decoration: dotted underline;
     color: #ffc400;
     font-style: normal;
