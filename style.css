@@ -315,7 +315,7 @@ main.menu details>ul>li {
 
 main.menu details>ul>li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px #cca300;
+    box-shadow: 0 5px #504f4f;
 }
 
 main.menu details>ul>li>h3 {
