@@ -297,8 +297,6 @@ main.menu details>ul {
 
 main.menu details>ul>li {
     background-color: #ffebcc;
-    perspective: 1000px;
-
     width: 300px;
     height: 300px;
     border-radius: 25px;
@@ -306,15 +304,30 @@ main.menu details>ul>li {
     margin: 10px 5px;
 
     position: relative;
-    transform-style: preserve-3d;
 
     transition: box-shadow ease-in-out .3s,
         transform ease-in-out .5s;
 }
 
 main.menu details>ul>li:hover {
-    transform: translateY(-7px) rotateY(180deg);
+    transform: translateY(-7px);
     box-shadow: 0 7px #504f4f;
+}
+
+main.menu details>ul>li .flip-card-interne {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    width: 300px;
+    height: 300px;
+
+    transition: transform ease-in-out .5s;
+    bottom: 25px;
+}
+
+main.menu details>ul>li:hover .flip-card-interne{
+    transform: rotateY(180deg);
 }
 
 main.menu details>ul>li .flip-card-avant,
@@ -333,8 +346,7 @@ main.menu details>ul>li:hover .flip-card-arriere {
 }
 
 main.menu details>ul>li .flip-card-avant {
-    transition: opacity .5s ease-in-out;
-    opacity: 1
+    transition: opacity ease-in-out .5s;
 }
 
 main.menu details>ul>li:hover .flip-card-avant {
@@ -343,7 +355,7 @@ main.menu details>ul>li:hover .flip-card-avant {
 
 main.menu details>ul>li .flip-card-arriere {
     opacity: 0;
-    transition: display .5s ease-in-out;
+    transition: opacity ease-in-out .3s;
 }
 
 main.menu details>ul>li:hover .flip-card-arriere {
