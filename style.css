@@ -252,6 +252,10 @@ main.menu details em {
     font-size: 15px;
     font-family: 'Pacifico', cursive, sans-serif;
     font-style: normal;
+    margin: 0 50px;
+
+    position: absolute;
+    top: 35%;
 }
 
 main.menu h2,
