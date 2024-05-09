@@ -237,8 +237,8 @@ main.menu .propositions input[type="number"]::-webkit-outer-spin-button {
 }
 
 main.menu .propositions input[type="submit"] {
-    position: relative;
-    left: calc(50% - 70px);
+    padding: 20px 10%;
+    
 }
 
 main.menu details em {
