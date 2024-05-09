@@ -202,25 +202,36 @@ main.menu .propositions {
     flex-direction: column;
 }
 
-main.menu .propositions input[type="number"] {
-    margin: 8px;
-    width: 15px;
+main.menu .propositions input[type="number"],
+main.menu details>ul>li .bas input[type="button"] {
+    margin: 8px 0;
     padding: 8px;
-    text-align: center;
 
-    -moz-appearance: textfield;
-    appearance: textfield;
     background: #fff;
 
     outline: none;
     border: none;
-    border-radius: 25px;
 
     position: relative;
     bottom: 3px;
 }
 
+main.menu details>ul>li .bas input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    text-align: center;
+    width: 15px;
+}
 
+main.menu details>ul>li .bas input[type="button"]:first-child {
+    left: 10px;
+    border-radius: 25px 0 0 25px;
+}
+
+main.menu details>ul>li .bas input[type="button"]:last-child {
+    right: 10px;
+    border-radius:  0 25px 25px 0;
+}
 
 main.menu .propositions input[type="number"]::-webkit-inner-spin-button,
 main.menu .propositions input[type="number"]::-webkit-outer-spin-button {
@@ -268,10 +279,13 @@ main.menu details[open] summary::marker {
 }
 
 main.menu details>ul {
-    padding-left: 10px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 20px 10px;
+
+    justify-content: center;
+
+    padding-left: 10px;
     position: relative;
 }
 
@@ -294,11 +308,12 @@ main.menu details>ul>li:hover {
 main.menu details>ul>li>h3 {
     color: #1c1c1c;
 }
-main.menu details>ul>li>.bas {
+main.menu details>ul>li .bas {
     position: absolute;
     bottom: 0;
     left: calc(50% - 45px);
 }
+
 
 main.menu .bienvenue {
     background: #fff4e0;
