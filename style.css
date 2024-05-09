@@ -433,6 +433,11 @@ footer .horraire ul>li:nth-child(2n+1) {
     font-family: 'Pacifico', cursive, sans-serif;
 }
 
+footer em{
+    position: absolute;
+    margin-top: 145px;
+}
+
 h2,
 h3,
 summary {
