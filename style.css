@@ -222,6 +222,9 @@ main.menu details>ul>li .bas input[type="number"] {
     text-align: center;
     width: 15px;
 }
+main.menu details>ul>li .bas input[type="button"]{
+    cursor: pointer;
+}
 
 main.menu details>ul>li .bas input[type="button"]:first-child {
     left: 10px;
