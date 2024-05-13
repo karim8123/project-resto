@@ -5,6 +5,8 @@ Ci-joint notre projet de site web pour le restaurant des étudiants:
 
 Le lien vers notre site est le suivant: https://main--poulet-dore.netlify.app/
 
+github: https://github.com/karim8123/project-resto
+
 Nous avons fait un site responsive avec un peu de javascript.
 
 Cordialement.
